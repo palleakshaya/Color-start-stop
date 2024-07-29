@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0;
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+      }
+
+      button {
+        font-size: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+     <h1>This is super cool</h1> -->
+
+    <!-- <button onclick="start()">▶️</button>
+    <button onclick="stop()">⏹️</button>
+    <button onclick="pause()">⏸️</button>
+
+    <script> -->
+    <!-- // function start() {
+      //   x = setInterval(() => {
+      //     if (index == colors.length) {
+      //       index = 0;
+      //     }
+
+      //     console.log(index, colors[index]);
+      //     document.body.style.backgroundColor = colors[index];
+      //     index++;
+      //   }, 2000);
+      // }
+
+      // function stop() {
+      //   clearInterval(x);
+      //   index = 0;
+      // }
+      // function pause() {
+      //   clearInterval(x);
+      // }
+      let index = 0;
+      let x;
+
+      const images = [
+        cherries.jpg,
+        glass.jpg,
+        egg.jpg,
+        milk.jpg,
+        sugar - cubes.jpg,
+      ];
+      function start() {
+        x = setInterval(() => {
+          if (index == images.length) {
+            index = 0;
+          }
+
+          console.log(index, colors[index]);
+          document.body.style.backgroundColor = colors[index];
+          index++;
+        }, 2000);
+      }
+
+      function stop() {
+        clearInterval(x);
+        index = 0;
+      }
+      function pause() {
+        clearInterval(x);
+      }
+
+      //   window.alert("This is cool");
+      //   window.alert(5 + 4);
+
+      //   const result = window.confirm("Are sure about closing the window?");
+      //   console.log(result);
+
+      //   const name = window.prompt("Please tell me your name");
+      //   console.log(name);
+
+      //   window.setTimeout & window.setInterval
+
+      //   1. Timer
+      setTimeout(() => {
+        console.log("Hi, this is Nikhil 🙋‍♂️");
+      }, 5000);
+
+      //  2. Runner
+      const rocketInterval = setInterval(() => {
+        console.log("🧑‍🚀🚀");
+      }, 2000);
+
+      //  3. Stopper
+      setTimeout(() => {
+        clearInterval(rocketInterval);
+      }, 2000 * 3);
+
+      //   Task - Change the whole page color every 2s - cycle
+
+      const colors = ["crimson", "plum", "orange", "purple", "teal"];
+
+      var res;
+
+      function start() {
+        console.log("Start is clicked......");
+
+        if (res) {
+          console.log("interval is still persent");
+          return;
+        }
+        res = setInterval(() => {
+          if (index == colors.length) {
+            index = 0;
+          }
+
+          console.log(index, colors[index]);
+          document.body.style.backgroundColor = colors[index];
+          index++;
+        }, 2000);
+      }
+
+      function stop() {
+        console.log("Stop is clicked......");
+
+        clearInterval(res);
+        index = 0;
+      }
+      // able to do it,because, it stores the value in closure.
+      function pause() {
+        clearInterval(res);
+      }
+      // document.body.setAttribute("style", "background: orange");
+
+      // // let index = 0;
+
+      // let interval1 = setInterval(() => {
+      //   if (index == colors.length) {
+      //     index = 0;
+      //   }
+
+      //   console.log(index, colors[index]);
+      //   document.body.style.backgroundColor = colors[index];
+      //   index++;
+      // }, 2000);
+
+      // setInterval(() => {
+      //   start();
+      // }); -->
+
+    <button onclick="start()">▶️</button>
+    <button onclick="stop()">⏹️</button>
+    <button onclick="pause()">⏸️</button>
+
+    <script>
+      const colors = ["crimson", "plum", "orange", "purple", "teal"];
+      var res;
+      var index = 0;
+
+      function start() {
+        console.log("Start is clicked......");
+
+        if (res) {
+          console.log("interval is still persent");
+          return;
+        }
+        res = setInterval(() => {
+          if (index == colors.length) {
+            index = 0;
+          }
+
+          console.log(index, colors[index]);
+          document.body.style.backgroundColor = colors[index];
+          index++;
+        }, 2000);
+      }
+
+      function stop() {
+        console.log("Stop is clicked......");
+
+        clearInterval(res);
+        index = 0;
+      }
+      // able to do it,because, it stores the value in closure.
+      function pause() {
+        clearInterval(res);
+      }
+    </script>
+  </body>
+</html>
